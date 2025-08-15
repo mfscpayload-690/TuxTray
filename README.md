@@ -1,25 +1,68 @@
-# 🐧 TuxTray
+# 🐧 TuxTray - The Intelligent Penguin System Monitor
 
-TuxTray is a sophisticated cross-platform system tray application that brings an adorable animated penguin to your desktop. The penguin reacts dynamically to your system's resource usage with smooth animations — perfect for Linux enthusiasts, system administrators, and anyone who wants a fun way to monitor their system.
+<div align="center">
 
-![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows-lightgrey.svg)
+![TuxTray Logo](https://img.shields.io/badge/TuxTray-System%20Monitor-blue?style=for-the-badge&logo=linux&logoColor=white)
+
+**An intelligent animated penguin that lives in your system tray and reacts emotionally to your system's health!**
+
+*From calm dancing when your system is idle to frantic running when resources are stressed — your penguin companion understands your computer better than anyone.*
+
+![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)
+![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows-lightgrey.svg?style=flat-square)
+![Qt Framework](https://img.shields.io/badge/GUI-PySide6%20(Qt6)-brightgreen.svg?style=flat-square)
+![Architecture](https://img.shields.io/badge/architecture-Event%20Driven-orange.svg?style=flat-square)
+
+</div>
+
+---
+
+## 🌟 **NEW: Advanced 5-State Emotion System!**
+
+**TuxTray 2.0** introduces a revolutionary **emotion-based monitoring system** that transforms your penguin from a simple system monitor into an intelligent companion that truly understands your computer's feelings!
+
+### 🎭 The 5 Penguin Emotions
+
+| Emotion | Trigger | Animation | System State |
+|---------|---------|-----------|-------------|
+| 😌 **Calm** | All resources low | Dancing peacefully | System at rest |
+| 🚶 **Active** | Normal activity | Casual walking | Regular computing |
+| 🏃 **Busy** | Single resource high | Running at normal pace | Focused workload |
+| 😰 **Stressed** | Multiple resources strained | Running frantically | Heavy multitasking |
+| 🥵 **Overloaded** | Critical system stress | Collapsing from exhaustion | System at breaking point |
+
+### 🧠 Intelligent Multi-Resource Analysis
+Unlike traditional monitors that watch single metrics, TuxTray's **emotion engine** analyzes:
+- **CPU + RAM + Network** simultaneously
+- **Resource correlation patterns**  
+- **Overall system stress scoring (0-100%)**
+- **Smart threshold combinations**
+
+**Example Scenarios:**
+```
+CPU 15%, RAM 25%, Network 10 KB/s  → 😌 CALM (dancing)
+CPU 45%, RAM 50%, Network 200 KB/s → 🚶 ACTIVE (walking)  
+CPU 80%, RAM 80%, Network 600 KB/s → 😰 STRESSED (frantic running)
+CPU 95%, RAM 40%, Network 100 KB/s → 🥵 OVERLOADED (collapsing)
+```
 
 ---
 
 ## ✨ Features
 
 ### 🎯 Core Functionality
+- **🧠 Advanced Emotion System**: 5-state intelligent monitoring (NEW!)
 - **Real-time System Monitoring**: CPU, RAM, and network usage tracking
 - **Reactive Animations**: Penguin behavior changes based on system load
 - **Multiple Animation Modes**:
-  - 🖥️ **CPU Mode** (default): Penguin speed reflects CPU usage
+  - 🎭 **Emotion Mode** (NEW!): Multi-resource emotional intelligence
+  - 🖥️ **CPU Mode**: Penguin speed reflects CPU usage
   - 💾 **RAM Mode**: Animation responds to memory consumption
   - 🌐 **Network Mode**: Activity based on network throughput
-- **Smart Thresholds**: Configurable thresholds for idle, walking, and running states
+- **Smart Thresholds**: Configurable thresholds for all monitoring modes
 - **System Tray Integration**: Native system tray with context menu
-- **Real-time Tooltips**: Hover to see current system stats
+- **Real-time Tooltips**: Hover to see current system stats and stress levels
 
 ### 🎨 Visual & UI
 - **High-Quality Animations**: Smooth frame-based penguin animations
