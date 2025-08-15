@@ -20,8 +20,6 @@
 
 ## 🌟 **NEW: Advanced 5-State Emotion System!**
 
-**TuxTray 2.0** introduces a revolutionary **emotion-based monitoring system** that transforms your penguin from a simple system monitor into an intelligent companion that truly understands your computer's feelings!
-
 ### 🎭 The 5 Penguin Emotions
 
 | Emotion | Trigger | Animation | System State |
@@ -31,13 +29,6 @@
 | 🏃 **Busy** | Single resource high | Running at normal pace | Focused workload |
 | 😰 **Stressed** | Multiple resources strained | Running frantically | Heavy multitasking |
 | 🥵 **Overloaded** | Critical system stress | Collapsing from exhaustion | System at breaking point |
-
-### 🧠 Intelligent Multi-Resource Analysis
-Unlike traditional monitors that watch single metrics, TuxTray's **emotion engine** analyzes:
-- **CPU + RAM + Network** simultaneously
-- **Resource correlation patterns**  
-- **Overall system stress scoring (0-100%)**
-- **Smart threshold combinations**
 
 **Example Scenarios:**
 ```
