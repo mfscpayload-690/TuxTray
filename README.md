@@ -260,23 +260,6 @@ python3 debug_animation.py
 
 ---
 
-## 🎯 Roadmap
-
-### 🔄 Current Development
-- [ ] **Enhanced Skin System**: More penguin themes and characters
-- [ ] **Advanced Metrics**: GPU usage, disk I/O, temperature monitoring
-- [ ] **Custom Notifications**: Configurable alerts for resource thresholds
-- [ ] **Statistics Logging**: Historical data tracking and visualization
-
-### 🌟 Future Features
-- [ ] **Plugin Architecture**: Third-party extensions support
-- [ ] **Web Dashboard**: Browser-based configuration and monitoring
-- [ ] **Multi-mascot Support**: Choose from various animated characters
-- [ ] **Sound Effects**: Audio feedback for different system states
-- [ ] **Cross-desktop Compatibility**: Enhanced Wayland and various DE support
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit pull requests, create issues, or suggest new features.
