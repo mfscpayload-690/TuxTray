@@ -145,7 +145,7 @@ def main():
     - Sets up signal handling for graceful exit
     - Starts the main application logic
     """
-    # Ensure proper handling of application identity on Linux
+    # Platform-specific initialization
     if sys.platform == "linux":
         try:
             from ctypes import cdll, byref, create_string_buffer
@@ -155,6 +155,19 @@ def main():
             libc.prctl(PR_SET_NAME, byref(name), 0, 0, 0)
         except (ImportError, OSError) as e:
             print(f"Could not set process name: {e}")
+    
+    elif sys.platform == "win32":
+        # Windows-specific initialization
+        try:
+            import ctypes
+            # Set Windows application model ID for proper taskbar grouping
+            ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID("TuxTray.SystemMonitor.v2")
+            
+            # Hide console window in production
+            if getattr(sys, 'frozen', False):  # Running as PyInstaller bundle
+                ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 0)
+        except Exception as e:
+            print(f"Windows initialization warning: {e}")
     
     # Initialize Qt Application
     app = QApplication(sys.argv)

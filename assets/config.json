@@ -80,7 +80,7 @@
     },
     "settings": {
         "poll_interval_ms": 500,
-        "animation_mode": "network",
+        "animation_mode": "cpu",
         "current_skin": "default",
         "tray_icon_size": 32,
         "emotion_system_enabled": true
