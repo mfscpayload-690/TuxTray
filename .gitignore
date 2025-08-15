@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Builds / dist
+build/
+dist/
+*.spec
+
+# Virtual envs
+venv/
+.venv/
+ENV/
+env/
+*.venv
+
+# IDE/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+*.gif
+assets/*.gif
+assets/**/*.gif

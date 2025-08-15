@@ -1,0 +1,88 @@
+{
+    "skins": {
+        "default": {
+            "name": "Classic Penguin",
+            "author": "Veo3 AI Generated",
+            "animations": {
+                "calm": {
+                    "frames": 19,
+                    "fps": 8,
+                    "loop": true,
+                    "description": "Dancing calmly - system relaxed"
+                },
+                "active": {
+                    "frames": 187,
+                    "fps": 18,
+                    "loop": true,
+                    "description": "Walking - normal activity"
+                },
+                "busy": {
+                    "frames": 187,
+                    "fps": 24,
+                    "loop": true,
+                    "description": "Running normal speed - single resource busy"
+                },
+                "stressed": {
+                    "frames": 187,
+                    "fps": 30,
+                    "loop": true,
+                    "description": "Running high speed - multiple resources busy"
+                },
+                "overloaded": {
+                    "frames": 187,
+                    "fps": 24,
+                    "loop": true,
+                    "description": "Run and collapse - system overloaded"
+                }
+            }
+        }
+    },
+    "emotion_thresholds": {
+        "calm": {
+            "cpu_max": 20,
+            "ram_max": 30,
+            "network_max_kbps": 50,
+            "description": "All resources low - penguin is relaxed and dancing"
+        },
+        "active": {
+            "cpu_range": [
+                20,
+                60
+            ],
+            "ram_range": [
+                30,
+                70
+            ],
+            "network_range_kbps": [
+                50,
+                500
+            ],
+            "description": "Normal system activity - penguin walking around"
+        },
+        "busy": {
+            "single_resource_threshold": 60,
+            "description": "One resource high - penguin running at normal speed"
+        },
+        "stressed": {
+            "multiple_resources_threshold": 70,
+            "cpu_high": 70,
+            "ram_high": 75,
+            "network_high_kbps": 800,
+            "description": "Multiple resources high - penguin running frantically"
+        },
+        "overloaded": {
+            "cpu_critical": 90,
+            "ram_critical": 90,
+            "network_critical_kbps": 2000,
+            "any_critical_threshold": 85,
+            "description": "System critically stressed - penguin exhausted"
+        }
+    },
+    "settings": {
+        "poll_interval_ms": 500,
+        "animation_mode": "cpu",
+        "current_skin": "default",
+        "tray_icon_size": 32,
+        "emotion_system_enabled": true
+    }
+}
